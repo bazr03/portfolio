@@ -1,0 +1,22 @@
+.section-about{
+    padding: 4rem;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__content-box{
+        width: 50%;
+    }
+
+    &__content-body{
+        margin-top: 1rem;
+    }
+
+    &__social{
+        margin-top: 2.5rem;
+    }
+}

@@ -1,4 +1,7 @@
-@import "typography";
-@import "base";
-@import "layout/header"
+@import "base/typography";
+@import "base/base";
+@import "layout/header";
+@import "layout/navigation";
+@import "components/button";
 
+@import "pages/home"
