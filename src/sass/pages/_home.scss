@@ -1,11 +1,19 @@
-.section-about,
-.section-habilities{
+.section{
     padding: 4rem;
 }
+.content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 8rem 0;
 
-.section-habilities{
+}
+
+
+.section-skills,
+.section-proyects{
+    margin-top: 5rem;
     clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 89%);
-    background-color: salmon;
+    background-color: var(--color-background-dark);
 }
 
 .about{

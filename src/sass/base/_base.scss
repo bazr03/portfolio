@@ -4,10 +4,14 @@
     --color-background-dark: #222121;
     --color-background-yellow: #77725D;
     --color-font: #D3D2D2;
+    --color-grey-1: #93918B;
 
-    --default-font-size:1.3rem;
+    --default-font-size:1.4rem;
 
     --zindex_nav:200;
+    --zindex_mobileNav:400;
+    --zindex_backdrop:300;
+    --zindex_navBackground:400;
 }
 
 $bp-largest: 75em;     // 1200px
@@ -46,7 +50,6 @@ body {
 }
 
 main{
-    width: 80%;
     max-width: 1920px;
     margin: 0 auto;
 }

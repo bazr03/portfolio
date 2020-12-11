@@ -1,0 +1,13 @@
+.mobile-nav{
+    display: none;
+    padding: 1rem;
+
+    &__logo-box{
+        max-width: 250px;
+    }
+
+    &__logo{
+        width: 100%;
+        height: auto;
+    }
+}

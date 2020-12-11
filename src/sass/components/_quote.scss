@@ -1,0 +1,17 @@
+.quote{
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    letter-spacing: 1.5px;
+    width: 80%;
+    font-style: italic;
+
+    &__author{
+        font-style: italic;
+        color: white;
+    }
+
+    &--yellow{
+        color: var(--color-primary);
+    }
+}
