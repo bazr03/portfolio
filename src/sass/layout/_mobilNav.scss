@@ -1,6 +1,15 @@
 .mobile-nav{
-    display: none;
-    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: var(--zindex_mobileNav);
+    background-color: goldenrod;
+    max-width: 600px;
+    padding: 2rem;
+    box-shadow: 1rem 0 6rem rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
 
     &__logo-box{
         max-width: 250px;
@@ -9,5 +18,25 @@
     &__logo{
         width: 100%;
         height: auto;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+
+    &__list{
+        list-style: none;
+        margin-top: 2rem;
+    }
+
+    &__item{
+        font-size: 1.8rem;
+    }
+    &__item a{
+        text-decoration: none;
     }
 }

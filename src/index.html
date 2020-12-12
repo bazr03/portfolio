@@ -7,16 +7,12 @@
     <title>Iván Bazaldúa</title>
 </head>
 <body>
+    <div class="backdrop" >&nbsp;</div>
     <div class="navigation" >
         <a href="/" class="navigation__link" >
             <img src="static/Logo_ICBR1_v2.png" class="navigation__logo" alt="logo_Ivan_Bazaldua"/>
         </a>
-        <input type="checkbox" class="navigation__checkbox" id="mobileNav-toggle" />
-        <label for="mobileNav-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__backdrop" >&nbsp;</div>
-        <div class="navigation__background">&nbsp;</div>
+
         <nav class="navigation__nav" >
             <ul class="navigation__list" >
                 <li class="navigation__item ">
@@ -27,6 +23,11 @@
                 </li>
             </ul>
         </nav>
+        <div class="navigation__toggle-button">
+            <span class="navigation__button-bar">&nbsp;</span>
+            <span class="navigation__button-bar">&nbsp;</span>
+            <span class="navigation__button-bar">&nbsp;</span>
+        </div>
     </div>
     <header class="header" >
         <div class="header__box" >
@@ -35,6 +36,7 @@
             </p>
         </div>
     </header>
+
     <!-- INICIO Mobile Menu-->
     <div class="mobile-nav">
         <div class="mobile-nav__logo-box">
@@ -45,13 +47,10 @@
           <nav class="mobile-nav__nav">
             <ul class="mobile-nav__list">
               <li class="mobile-nav__item">
-                  <a href="#">Packages</a>
+                  <a href="#">Inicio</a>
               </li>
               <li class="mobile-nav__item">
-                  <a href="#">Customers</a>
-              </li>
-              <li class="mobile-nav__item mobile-nav__item--cta">
-                  <a href="#">Start Hosting</a>
+                  <a href="#">CV</a>
               </li>
           </ul>
         </nav>
