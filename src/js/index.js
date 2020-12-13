@@ -4,6 +4,7 @@ import "../sass/main.scss";
 /* Importar imagenes */
 // import "../static/Logo_Iván_Bazaldúa.png"
 import "../static/Logo_ICBR1_v2.png"
+import "../static/Logo_ICBR2_mobile.png"
 import "../static/heroBkgimg.jpg"
 import "../static/Ivan-web-small1.png";
 import "../static/logos_html-5.png";
@@ -21,6 +22,7 @@ import "../static/logos_django.png";
 import "../static/dashicons_database.png";
 import "../static/logos_linux-tux.png";
 import "../static/logos_angular-icon.png";
+import "../static/sprite.svg";
 
 
 /*--------------------------
@@ -30,6 +32,7 @@ const header = document.querySelector(".header");
 const mainNav = document.querySelector(".navigation");
 const navImage = document.querySelector(".navigation__logo");
 const mainNavLinks = document.querySelectorAll(".navigation__link");
+
 
 /*--------------------------
 ------- OBSERVADORES ----------
@@ -65,3 +68,26 @@ function observadores() {
 
   heroObserver.observe(header);
 }
+
+/*--------------------------
+------- MOBILE NAV ----------
+----------------------------*/
+const mobileNav = document.querySelector(".mobile-nav");
+const toggleNavButton = document.querySelector(".navigation__toggle-button");
+const backdrop = document.querySelector(".backdrop")
+
+toggleNavButton.addEventListener('click', function(){
+  backdrop.style.display = "block";
+  mobileNav.classList.add('open');
+  setTimeout(function(){
+    backdrop.classList.add('open');
+  }, 10);
+});
+
+backdrop.addEventListener('click', function(){
+  backdrop.classList.remove('open');
+  mobileNav.classList.remove('open');
+  setTimeout(function(){
+    backdrop.style.display = "none";
+  }, 200);
+});

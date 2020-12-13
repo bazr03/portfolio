@@ -2,3 +2,20 @@
     color: royalblue!important;
 }
 
+.open{
+    opacity: 1!important;
+    transform: translateX(0)!important;
+}
+
+.backdrop{
+    display: none;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: var(--zindex_backdrop);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,255,255, 0.7);
+    transition: opacity 200ms linear;
+}

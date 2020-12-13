@@ -2,6 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0;
+    transform: translateX(-105%);
     height: 100vh;
     z-index: var(--zindex_mobileNav);
     background-color: goldenrod;
@@ -10,6 +12,8 @@
     box-shadow: 1rem 0 6rem rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    transition: transform 300ms ease-in-out;
 
     &__logo-box{
         max-width: 250px;
@@ -25,7 +29,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex: 1;
     }
 
     &__list{
@@ -35,8 +38,28 @@
 
     &__item{
         font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
     }
     &__item a{
         text-decoration: none;
+        color: black;
+    }
+
+    &__social-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon{
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-right: 2rem;
     }
 }
