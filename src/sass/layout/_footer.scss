@@ -1,0 +1,43 @@
+.footer{
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);
+    background-color: var(--color-background-footer);
+
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    &__contactame,
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__contactame{
+        flex: 0 1 50%;
+    }
+
+    &__form{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__input,
+    &__textarea{
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    &__Info{
+        flex: 1;
+    }
+
+    &__copyright{
+        display: flex;
+        padding: 1.5rem 3rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-bkg-copy);
+    }
+}
