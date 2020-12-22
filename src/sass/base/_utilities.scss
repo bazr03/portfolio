@@ -1,3 +1,10 @@
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 8rem 0;
+
+}
 .active{
     color: royalblue!important;
 }
@@ -18,4 +25,10 @@
     height: 100vh;
     background: rgba(255,255,255, 0.7);
     transition: opacity 200ms linear;
+}
+
+.bg-yellow{
+    background-color: var(--color-primary);
+    text-align: center;
+    border-radius: 1rem;
 }

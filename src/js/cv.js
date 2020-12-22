@@ -1,5 +1,5 @@
 import "./shared";
-import "../sass/main.scss";
+import "../sass/cv.scss";
 
 /* Importar imagenes */
 import "../static/Logo_ICBR1_v2.png"
