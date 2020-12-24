@@ -1,14 +1,14 @@
-.job{
+.institution{
     margin: 1rem 0;
 
-    &__title{
+    &__name{
         font-size:1.8rem;
         text-transform: uppercase;
         margin-bottom: 0.5rem;
         color: var(--color-primary);
     }
 
-    &__company{
+    &__speciality{
         font-size: 1.2rem;
         color: white;
     }
@@ -17,9 +17,14 @@
         color: var(--color-grey-1)
     }
 
-    &__description{
+    &__tesis{
         margin: 1rem 0;
         text-align: justify;
+        font-style: italic;
         font-size: 1.3rem;
+
+        & span{
+            font-weight: 700;
+        }
     }
 }

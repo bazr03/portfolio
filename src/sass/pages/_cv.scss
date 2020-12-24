@@ -17,6 +17,8 @@
 
 .cv{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     &__main {
         padding: 1rem;
@@ -25,6 +27,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include respond(tab-port) {
+            flex: 1;
+        }
     }
 
     &__experience{
@@ -46,10 +52,17 @@
     }
 
     &__education{
-        align-self: stretch;
+        
         margin-top: 4rem;
 
         display: flex;
         flex-direction: column;
+    }
+
+    &__extras{
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
