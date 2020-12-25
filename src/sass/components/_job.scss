@@ -1,5 +1,11 @@
 .job{
     margin: 1rem 0;
+    max-width: 60rem;
+    margin: 1.5rem 0;
+
+    &:not(:last-child){
+        border-bottom: 1px dotted white;
+    }
 
     &__title{
         font-size:1.8rem;
