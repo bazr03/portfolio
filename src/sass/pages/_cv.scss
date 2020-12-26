@@ -2,16 +2,20 @@
     padding:0;
 }
 .intro{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    background-color: white;
+    background-color: #676660;
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 1rem 2rem 6rem rgba(0,0,0,0.5);
-    transform: translateY(-7rem);
+    transform: translateY(-3rem);
 
     & p{
-        color: black;
+        color: white;
+    }
+
+    @include respond(tab-port) {
+        width: 70%;
     }
 }
 
@@ -31,14 +35,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include respond(tab-port) {
+            margin-right: 4rem;
+        }
     }
 
     &__jobs{
         margin: 2rem 0;
-        padding: 1.5rem;
+        padding: 2rem;
         background-color: var(--color-background-dark);
         border-radius: 1rem;
-        box-shadow: 2rem 4rem 6rem rgba(0,0,0,0.5);
+        box-shadow: 1rem 2rem 6rem rgba(0,0,0,0.5);
 
         
     }
@@ -52,5 +60,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 6rem;
+
+        @include respond(tab-port) {
+            margin-top: 0;
+        }
     }
 }

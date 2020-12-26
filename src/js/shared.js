@@ -15,7 +15,7 @@ observadores();
 
 function observadores() {
   const heroOptions = {
-    rootMargin: "-180px"
+    rootMargin: "-270px"
   };
 
   const heroObserver = new IntersectionObserver(function(
