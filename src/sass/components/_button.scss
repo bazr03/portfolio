@@ -42,8 +42,22 @@
         }
     }
 
+    &--blue{
+        background-color: #00587A;
+        color: white;
+
+        &::after {
+            background-color: white;
+            color: #00587A;
+        }
+    }
+
     &--small{
-        padding: 0.5rem 2rem;
+        padding: 1rem 2.5rem;
         font-size:var(--font-size-small)!important ;
+    }
+
+    &--submit{
+        color: var(--color-primary);
     }
 }

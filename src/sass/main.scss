@@ -1,9 +1,4 @@
-@import "base/typography";
-@import "base/base";
-@import "layout/header";
-@import "layout/navigation";
-@import "layout/mobilNav";
-@import "layout/footer";
+@import "shared.scss";
 @import "components/button";
 @import "components/skill";
 @import "components/quote";
