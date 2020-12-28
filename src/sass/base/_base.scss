@@ -8,7 +8,7 @@
     --color-font: #D3D2D2;
     --color-grey-1: #93918B;
 
-    --default-font-size:1.4rem;
+    --default-font-size:1.6rem;
     --font-size-small:1.2rem;
 
     --zindex_nav:200;
@@ -37,6 +37,7 @@ $bp-smallest: 31.25em; // 500px
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    scroll-behavior: smooth;
 
     @media only screen and (max-width: $bp-large) {
         font-size: 50%;

@@ -24,6 +24,9 @@
 
     &__item{
         padding: 0 1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
     }
 
     &__link{
@@ -39,7 +42,7 @@
     }
 
     &__logo{
-        max-width: 400px;
+        max-width: 350px;
     }
 
 

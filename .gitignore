@@ -3,7 +3,7 @@ node_modules
 .npm
 # Optional eslint cache
 .eslintcache
-
+SVG
 # Optional REPL history
 .node_repl_history
 

@@ -1,7 +1,11 @@
 .footer{
-    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
     background-color: var(--color-background-footer);
     margin-top: 10rem;
+
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);
+    }
 
     &__box{
         display: flex;

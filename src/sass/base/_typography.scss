@@ -19,7 +19,7 @@
     text-align: center;
 }
 .header-h2{
-    font-size: 3rem;    
+    font-size: 2.8rem;    
 }
 .header-h3{
     font-size: 1.6rem;
@@ -48,4 +48,19 @@
     font-size: var(--default-font-size);
     margin-bottom: 1rem;
     text-align: justify;
+    
+    hyphens: auto;
+
+    @include respond(tab-port) {
+        width: 80%;
+    }
+
+    &--columns{
+        column-count: 1;
+
+        @include respond(tab-port) {
+            column-count: 2;
+            column-gap: 4rem; //1em = 14px;
+        }
+    }
 }
