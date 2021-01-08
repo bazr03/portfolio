@@ -2,23 +2,20 @@
 .content{
     width: 90%;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding:  0;
 
     @include respond(tab-port) {
         width: 80%;
-        margin: 0 auto;
-        padding: 8rem 0;
     }
 
     @include respond(tab-land) {
         width: 70%;
-        margin: 0 auto;
-        padding: 8rem 0;
     }
 
 }
 .active{
     color: royalblue!important;
+    border-bottom: 1px solid royalblue;
 }
 
 .open{
@@ -45,7 +42,20 @@
     padding: 1rem 2rem;
 }
 
+.secondary-color{
+    color:var(--color-secondary)!important;
+}
+
+.cp-dark{
+    color: var(--color-primary-dark)!important;
+}
+
+
 .mt-5{
     margin-top: 5rem;
 }
 
+.showBtn{
+    opacity: 1!important;
+    transform: translateY(0)!important;
+}

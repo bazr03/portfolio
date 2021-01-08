@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <meta name="description" content="Curriculum Vitae de Iván César Bazaldúa Rodríguez"/>
     <title>Curriculum Vitae</title>
 </head>
 
@@ -48,14 +69,14 @@
             </svg> -->
         </div>
         <div class="mobile-nav__content">
-            <h5 class="header-h5">Menu</h5>
+            <h5 class="header-h5 secondary-color">Menu</h5>
             <nav class="mobile-nav__nav">
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item">
-                        <a href="index.html">Inicio</a>
+                        <a href="index.html " class="mobile-nav__link ">Inicio</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="cv.html">CV</a>
+                        <a href="cv.html" class="mobile-nav__link active">CV</a>
                     </li>
                 </ul>
             </nav>
@@ -81,7 +102,41 @@
         <section class="section ">
             <div class="content content--intro">
                 <div class="intro">
-                    <p class="paragraph">Ingeniero Geofísico por la Universidad Autónoma de Nuevo León y Maestría en Ciencias por el Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE), con 10 años de experiencia en la caracterización del subsuelo mediante métodos geofísicos enfocados a la exploración de petróleo y gas, exploración mineral, geotecnia y búsqueda de agua subterránea. Entre los métodos utilizados se encuentran sísmica de reflexión y refracción, magnetometría y resistividad eléctrica, iniciando en el diseño y optimización de arreglos de adquisición hasta la toma de datos y su interpretación.</p>
+                    <div class="intro__info">
+                        <div class="intro__image-box">
+                            <img src="static/ICBR4.png" class="intro__image" />
+                        </div>
+                        <div class="intro__contact">
+                            <div class="intro__name-box">
+                                <svg class="intro__icon-name">
+                                    <use xlink:href="static/sprite.svg#bi_file-person-fill"></use>
+                                </svg>
+                                <h2 class="intro__name">Iván César Bazaldúa Rodríguez</h2>
+                            </div>
+                            <div class="intro__social">
+                                    <a href="#">
+                                        <svg class="intro__icon">
+                                            <use xlink:href="static/sprite.svg#ant-design_linkedin-filled"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="intro__icon">
+                                            <use xlink:href="static/sprite.svg#ant-design_facebook-filled"></use>
+                                        </svg>
+                                    </a>
+                            </div>
+                            <div class="intro__links">
+                                <a class="btn2" >Descargar CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__resume">
+                        <div class="about__content-box">
+                            <div class="about__content-body">
+                                <p class="paragraph">Ingeniero Geofísico por la Universidad Autónoma de Nuevo León y Maestría en Ciencias por el Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE), con 10 años de experiencia en la caracterización del subsuelo mediante métodos geofísicos enfocados a la exploración de petróleo y gas, exploración mineral, geotecnia y búsqueda de agua subterránea. Entre los métodos utilizados se encuentran sísmica de reflexión y refracción, magnetometría y resistividad eléctrica, pasando desde el diseño y optimización de arreglos de adquisición hasta la toma de datos y su interpretación.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,7 +248,12 @@
                     <div class="cv__extras">
                         <h2 class="header-h2 ">Habilidades</h2>
                         <div class="extra">
-                            <h3 class="header-h3">Software</h3>
+                            <div class="extra__icon-box">
+                                <svg class="extra__icon">
+                                    <use xlink:href="static/sprite.svg#undraw_programming"></use>
+                                </svg>
+                            </div>
+                            <h3 class="header-h3 cp-dark">Software</h3>
                             <ul class="extra__list">
                                 <li class="extra__item">Decision Space Geoscience (DSG)</li>
                                 <li class="extra__item">Seismic Unic (básico)</li>
@@ -207,7 +267,12 @@
                             </ul>
                         </div>
                         <div class="extra">
-                            <h3 class="header-h3">Tecnologias web</h3>
+                            <div class="extra__icon-box">
+                                <svg class="extra__icon">
+                                    <use xlink:href="static/sprite.svg#undraw_static_website"></use>
+                                </svg>
+                            </div>
+                            <h3 class="header-h3 cp-dark">Tecnologias web</h3>
                             <ul class="extra__list">
                                 <li class="extra__item">Html</li>
                                 <li class="extra__item">CSS</li>
@@ -218,7 +283,12 @@
                             </ul>
                         </div>
                         <div class="extra">
-                            <h3 class="header-h3">Lenguajes de programación</h3>
+                            <div class="extra__icon-box">
+                                <svg class="extra__icon">
+                                    <use xlink:href="static/sprite.svg#undraw_code_typing"></use>
+                                </svg>
+                            </div>
+                            <h3 class="header-h3 cp-dark">Lenguajes de programación</h3>
                             <ul class="extra__list">
                                 <li class="extra__item">Python</li>
                                 <li class="extra__item">Matlab</li>
@@ -227,7 +297,12 @@
                             </ul>
                         </div>
                         <div class="extra">
-                            <h3 class="header-h3">Personales</h3>
+                            <div class="extra__icon-box">
+                                <svg class="extra__icon">
+                                    <use xlink:href="static/sprite.svg#undraw_advanced_customization"></use>
+                                </svg>
+                            </div>
+                            <h3 class="header-h3 cp-dark">Personales</h3>
                             <ul class="extra__list">
                                 <li class="extra__item">Organizado</li>
                                 <li class="extra__item">Puntual</li>
@@ -244,6 +319,13 @@
     </main>
 
     <footer class="footer">
+        <div class="scrollToTop" id="backToTop">
+            <a href="#top" class="scrollToTop--Btn" >
+                <svg class="scrollToTop__icon">
+                    <use xlink:href="static/sprite.svg#eva_arrow-up-fill"></use>
+                </svg>
+            </a>
+        </div>
         <div class="content">
             <div class="footer__box">
                 <div class="footer__Info">
@@ -268,7 +350,10 @@
                                 </a>
                             </div>
                         </div>
-                        <button class="btn btn--small btn--yellow">Descargar CV</button>
+                        <!-- <button class="btn btn--small btn--yellow">Descargar CV</button> -->
+                        <div class="bt">
+                            <a class="btn2">Descargar CV</a>
+                        </div>
                 </div><!--.footer__Info -->
                 <div class="footer__contactame">
                     <div class="header-h4">Contactame</div>

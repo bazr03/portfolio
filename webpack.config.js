@@ -14,8 +14,8 @@ function recursiveIssuer(m) {
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, "src/js/index.js")
-    //nosotros: path.resolve(__dirname, 'src/js/nosotros.js')
+    index: path.resolve(__dirname, "src/js/index.js"),
+    cv: path.resolve(__dirname, "src/js/cv.js")
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -27,7 +27,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env'],
+            cacheCompression : false
+          }
         }
       },
       {
@@ -35,12 +39,34 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          "postcss-loader",
-          "sass-loader"
+          {
+            loader: 'postcss-loader',
+            options: {
+                postcssOptions: {
+                  plugins: [
+                    [
+                      "postcss-preset-env",
+                      {
+                        // Options
+                      }
+                    ]
+                  ]
+                }
+            }
+        },
+          {
+            loader: 'sass-loader',
+            options:{
+              sourceMap:true,
+              sassOptions:{
+                outputStyle: "expanded",
+              }
+            }
+          }
         ]
       },
       {
-        test: /\.(jpg|png|gif|jpeg)$/,
+        test: /\.(jpg|png|gif|jpeg|svg)$/,
         use: [
           {
             loader: "file-loader",
@@ -86,7 +112,7 @@ module.exports = {
       filename: "index.html",
       chunks: ["index"],
       minify: {
-        collapseWhitespace: true,
+        collapseWhitespace: false,
         removeComments: true,
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
@@ -94,19 +120,19 @@ module.exports = {
         useShortDoctype: true
       }
     }),
-    // new HtmlWebpackPlugin({
-    //     template: 'src/nosotros.html',
-    //     filename: 'nosotros.html',
-    //     chunks : ['nosotros'],
-    //     minify:{
-    //         collapseWhitespace:true,
-    //         removeComments:true,
-    //         removeRedundantAttributes:true,
-    //         removeScriptTypeAttributes:true,
-    //         removeStyleLinkTypeAttributes:true,
-    //         useShortDoctype:true
-    //     }
-    // }),
+    new HtmlWebpackPlugin({
+        template: 'src/cv.html',
+        filename: 'cv.html',
+        chunks : ['cv'],
+        minify:{
+            collapseWhitespace:false,
+            removeComments:true,
+            removeRedundantAttributes:true,
+            removeScriptTypeAttributes:true,
+            removeStyleLinkTypeAttributes:true,
+            useShortDoctype:true
+        }
+    }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css"
     })

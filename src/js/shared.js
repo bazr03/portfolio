@@ -14,12 +14,16 @@ const header = document.querySelector(".header");
 const mainNav = document.querySelector(".navigation");
 const navImage = document.querySelector(".navigation__logo");
 const mainNavLinks = document.querySelectorAll(".navigation__link");
+const footer = document.querySelector("footer");
+const backToTop = document.querySelector("#backToTop");
+
 
 
 /*--------------------------
 ------- OBSERVADORES ----------
 ----------------------------*/
 observadores();
+
 
 function observadores() {
   const heroOptions = {
@@ -48,7 +52,19 @@ function observadores() {
   },
   heroOptions);
 
+  const footerObserver = new IntersectionObserver( function(entries, footerObserver){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        console.log("Agregando clase showBtn");
+        backToTop.classList.add('showBtn');
+      } else {
+        backToTop.classList.remove('showBtn');
+      }
+    });
+  });
+
   heroObserver.observe(header);
+  footerObserver.observe(footer);
 }
 
 /*--------------------------

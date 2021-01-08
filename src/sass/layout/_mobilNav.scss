@@ -7,6 +7,7 @@
     height: 100vh;
     z-index: var(--zindex_mobileNav);
     background-color: goldenrod;
+    width: 50%;
     max-width: 600px;
     padding: 2rem;
     box-shadow: 1rem 0 6rem rgba(0,0,0,0.3);
@@ -16,7 +17,7 @@
     transition: transform 300ms ease-in-out;
 
     &__logo-box{
-        max-width: 250px;
+        max-width: 200px;
     }
 
     &__logo{

@@ -1,10 +1,4 @@
-.content--intro{
-    padding-bottom:0;
-    padding-top: 8rem;
-}
-
-
-.intro{
+.about-me{
     transform: translateY(-12rem);
 
     &__image-box{
@@ -30,6 +24,7 @@
 
         @include respond(phone-xl) {
             flex-direction: row;
+            padding-top: 8rem;
         }
     }
 
@@ -58,18 +53,6 @@
         height: 3.5rem;
     }
 
-    &__name-box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 6rem;
-    }
-
-    &__icon-name{
-        width: 25px;
-        height: auto;
-        margin-right: 1.5rem;
-    }
     &__name{
         font-size: 2.4rem;
         font-weight: bold;
@@ -83,8 +66,8 @@
         justify-content: space-around;
     }
 
-    &__resume{
-        margin-top: 5rem;
+    &__intro{
+        margin-top: 6rem;
 
         @include respond(phone-xl) {
             margin-top: 8rem;
@@ -101,53 +84,5 @@
 
     &__social{
         margin-top: 2.5rem;
-    }
-}
-
-.cv{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    @include respond(tab-port) {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    &__main {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        @include respond(tab-port) {
-            margin-right: 4rem;
-        }
-    }
-
-    &__jobs{
-        margin: 2rem 0;
-        padding: 2rem;
-        background-color: var(--color-background-dark);
-        border-radius: 1rem;
-        box-shadow: 1rem 2rem 6rem rgba(0,0,0,0.5);
-
-        
-    }
-
-    &__education{
-        margin-top: 2rem;
-    }
-
-    &__extras{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 6rem;
-
-        @include respond(tab-port) {
-            margin-top: 0;
-        }
     }
 }

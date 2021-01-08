@@ -1,5 +1,7 @@
 :root{
     --color-primary: #ECC313;
+    --color-primary-dark:#D2AE11;
+    --color-secondary: #00587A;
     --color-background: #333232;
     --color-background-dark: #222121;
     --color-background-yellow: #77725D;
@@ -12,8 +14,9 @@
     --font-size-small:1.2rem;
 
     --zindex_nav:200;
-    --zindex_mobileNav:400;
-    --zindex_backdrop:300;
+    --zindex_mobileNav:500;
+    --zindex_backdrop:400;
+    --zindex_backToTop: 300; 
     --zindex_navBackground:400;
 }
 
